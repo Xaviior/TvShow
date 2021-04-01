@@ -17,7 +17,7 @@ const card = (shows) => {
       const titleLink = document.createElement("div");
       const link = document.createElement("a");
       mainCard.className = "main-card";
-      mainWrapper.append(mainCard);
+      mainWrapper.prepend(mainCard);
       img.src = result.show.image.medium;
       mainCard.append(img);
       titleLink.className = "link";
