@@ -21,8 +21,8 @@ const card = (shows) => {
       img.src = result.show.image.medium;
       mainCard.append(img);
       titleLink.className = "link";
-      link.innerText = `${result.show.name}`;
-      link.href = `${result.show.url}`;
+      link.innerText = result.show.name;
+      link.href = result.show.url;
       mainCard.append(titleLink);
       titleLink.append(link);
     }
